@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* MOBILE FIRST */
+h1 {
+    color: orange;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+h2 {
+    display: none;
+}
+h3 {
+    display: none;
+}
+div.navBar {
+    background-color: #F1F1F1;
+    padding: 10px;
+}
+div.navBar nav {
+    display: none;
+}
+div.navBar i {
+    float: right;
+}
+.container {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+.greenBar {
+    background-color: #7DD31E;
+    color: white;
+    padding: 10px;
+}
+.greenText {
+    padding: 10px;
+}
+.redBar {
+    background-color: #EB5B4C;
+    color: white;
+    padding: 10px;
+}
+.redText {
+    padding: 10px;
+}
+.blueBar {
+    background-color: #45AFFF;
+    color: white;
+    padding: 10px;
+}
+.blueText {
+    padding: 10px;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 50px;
+        padding: 20px;
+    }
+    div.navBar nav {
+        display: inline;
+    }
+    div.navBar nav a {
+        text-decoration: none;
+        margin: 30px;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+    }
+    div.navBar i {
+        display: none;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container .blueItem {
+        grid-column: 1 / 3;
+    }
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 105px;
+    }
+    h2 {
+        display: block;
+        background-color: black;
+        color: orange;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding: 5px;
+    }
+    h3 {
+        display: block;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        padding: 5px;
+    }
+    span {
+        color: red;
+        font-weight: bold;
+    }
+    .container {
+    grid-template-columns: repeat(3, 1fr);
+    }
+    .container .blueItem {
+        grid-column: 3 / 4;
+    }
+}
